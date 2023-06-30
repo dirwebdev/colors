@@ -1,7 +1,9 @@
 # Checkpoint 02
 
-## Instructions: This will be a savepoint for you.  If I ask you to pull up checkpoint_01.md:
-1. Display this file.
+This is the last good version! lets start from here.
+these are the last good generated .html, .css, .js, .json files
+
+ready to rock?
 
 ## html
 ```html

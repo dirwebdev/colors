@@ -11,25 +11,26 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     <div class="row row1" style="background-color: ${color.hex};">
                         <div class="copy-message"></div>
                     </div>
-                    <div class="row hex-row">HEX</div>
-                    <div class="row rgba-row">RGBA</div>
-                    <div class="row hsla-row">HSLA</div>
+                    <div class="row hex-row" data-color-code="${color.hex}">HEX</div>
+                    <div class="row rgba-row" data-color-code="${color.rgba}">RGBA</div>
+                    <div class="row hsla-row" data-color-code="${color.hsla}">HSLA</div>
                 `;
                 grid.appendChild(gridItem);
 
-                gridItem.querySelectorAll('.row').forEach(row => {
+                // Target only the rows with color codes
+                gridItem.querySelectorAll('.row:not(.row1)').forEach(row => {
                     row.addEventListener('click', function() {
-                        navigator.clipboard.writeText(color[this.classList[1].replace('-row', '')]);
+                        navigator.clipboard.writeText(this.getAttribute('data-color-code'));
                         let message = this.parentNode.querySelector('.copy-message');
                         message.style.display = 'flex';
                         message.textContent = `${this.classList[1].toUpperCase().replace('-ROW', '')} Copied!`;
                         setTimeout(() => { 
                             message.style.display = 'none'; 
-                        }, 2000);
+                        }, 1500);
                     });
 
                     row.addEventListener('mouseover', function() {
-                        this.textContent = color[this.classList[1].replace('-row', '')];
+                        this.textContent = this.getAttribute('data-color-code');
                     });
 
                     row.addEventListener('mouseout', function() {

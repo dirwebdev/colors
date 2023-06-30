@@ -1,9 +1,13 @@
 {
-  "copyInfo": "© 2023 - My Website",
-  "footerItems": ["Terms of Service", "Privacy Policy", "Sitemap"],
   "contactInfo": {
-      "name": "John Doe",
-      "company": "Doe Enterprises",
-      "email": "johndoe@example.com"
-  }
+    "name": "John Doe",
+    "company": "Color Grid Co.",
+    "email": "johndoe@colorgrid.com"
+  },
+  "copyInfo": "Copyright © 2023 Color Grid Co. All rights reserved.",
+  "footerItems": [
+    "Privacy Policy",
+    "Terms of Service",
+    "Help"
+  ]
 }
