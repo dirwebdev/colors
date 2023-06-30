@@ -1,4 +1,20 @@
 {
-  "branding": "My Company Name",
-  "navItems": ["Home", "About", "Contact"]
+  "branding": {
+    "name": "",
+    "logo": "images/logo.png"
+  },
+  "items": [
+    {
+      "text": "Home",
+      "href": "#"
+    },
+    {
+      "text": "About",
+      "href": "#"
+    },
+    {
+      "text": "Contact",
+      "href": "#"
+    }
+  ]
 }
