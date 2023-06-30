@@ -1,4 +1,9 @@
 {
-  "copyInfo": "© 2023 My Website",
-  "footerItems": ["Terms", "Privacy", "Help"]
+  "copyInfo": "© 2023 - My Website",
+  "footerItems": ["Terms of Service", "Privacy Policy", "Sitemap"],
+  "contactInfo": {
+      "name": "John Doe",
+      "company": "Doe Enterprises",
+      "email": "johndoe@example.com"
+  }
 }

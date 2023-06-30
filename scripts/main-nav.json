@@ -1,3 +1,4 @@
 {
+  "branding": "My Company Name",
   "navItems": ["Home", "About", "Contact"]
 }

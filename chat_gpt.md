@@ -56,4 +56,3 @@ generate sample header and footer .json files and they need to be injected to ea
 ```bash
 mkdir styles scripts && touch index.html styles/styles.css scripts/scripts.js scripts/colors-hex.json scripts/main-nav.json scripts/footer.json
 ```
-
